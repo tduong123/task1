@@ -213,35 +213,10 @@
 
 
 
-@media (max-width: 992px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .left-side {
-        padding-right: 0;
-        margin-bottom: 30px;
-    }
-
-    .logo {
-        font-size: 50px;
-    }
-
-    .tagline {
-        font-size: 22px;
-    }
-
-    .form-login {
-        width: 90%;
-    }
-}
-
-
 @media (max-width: 576px) {
     .global-container {
         align-items: flex-start;
-        padding-top: 50px;
+        padding-top: 40px;
     }
 
     .container {
@@ -257,7 +232,7 @@
     }
 
     .logo {
-        font-size: 42px;
+        font-size: 38px;
     }
 
     .tagline {
@@ -294,5 +269,82 @@
 
     .body-footer {
         padding: 0 15px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 48px;
+    }
+
+    .tagline {
+        font-size: 22px;
+    }
+
+    .form-login {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side {
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 52px;
+    }
+
+    .tagline {
+        font-size: 24px;
+    }
+
+    .form-login {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .logo {
+        font-size: 56px;
+    }
+
+    .form-login {
+        width: 380px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .logo {
+        font-size: 60px;
+    }
+
+    .form-login {
+        width: 400px;
     }
 }
